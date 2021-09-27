@@ -46,7 +46,6 @@ li {
 .right-container {
     max-width: 1185px;
     margin: 0 auto;
-    border: 1px solid;
 }
 
 .left-top {
@@ -170,4 +169,110 @@ li {
     font-size: 30px;
     cursor: pointer;
 }
+
+.right-title {
+    width: 200px;
+    margin-top: 80px;
+}
+
+.right-h2-title {
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+}
+
+.right-h2-title::after {
+    content: "+";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    right: 40px;
+    bottom: 2px;
+    font-size: 24px;
+    background: linear-gradient(180deg, #959CD9 0%, #5F66A2 100%);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.right-tabs {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.right-tab {
+    min-width: 207px;
+    height: 35px;
+    background: linear-gradient(180deg, #A55EEC 0%, #8338CD 100%);
+    border-radius: 3px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.right-tab:nth-child(2n+1) {
+    background: linear-gradient(180deg, #3F4475 0%, #212656 100%);
+}
+
+.right-tab:nth-child(3n+1) {
+    background: linear-gradient(180deg, #E46D6D 0%, #BB3A3A 100%);
+}
+
+.right-tab-text {
+    font-size: 20px;
+    font-weight: 700;
+    flex: 0 1 126px;
+    margin: 0 5px;
+}
+
+.right-tab-block {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    font-size: 22px;
+    font-weight: 700;
+    align-items: center;
+    height: 35px;
+}
+
+.right-tab-add {
+    cursor: pointer;
+}
+
+.right-tab-custom {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.right-blocks {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.right-block {
+   width: 217px;
+   height: 132px;
+   border-radius: 12px;
+   background: linear-gradient(180deg, #DCE3ED 0%, #B5C1D2 100%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px 15px;
+}
+
+.right-block-p {
+    font-size: 50px;
+    color: #959CD9;
+    cursor: pointer;
+}
+
 
