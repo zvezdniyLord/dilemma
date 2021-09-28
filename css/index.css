@@ -15,7 +15,7 @@ li {
 .wrapper {
     display: flex;
     min-height: 100%;
-    width: 100%;
+    max-width: 100%;
 }
 
 .left__zona {
@@ -228,7 +228,7 @@ li {
 .right-tab-text {
     font-size: 20px;
     font-weight: 700;
-    flex: 0 1 126px;
+    flex: 1 1 126px;
     margin: 0 5px;
 }
 
@@ -259,8 +259,8 @@ li {
 }
 
 .right-block {
-   width: 217px;
-   height: 132px;
+   min-width: 217px;
+   min-height: 132px;
    border-radius: 12px;
    background: linear-gradient(180deg, #DCE3ED 0%, #B5C1D2 100%);
    display: flex;
@@ -269,10 +269,18 @@ li {
    margin: 10px 15px;
 }
 
-.right-block-p {
+.right-block-plus {
     font-size: 50px;
-    color: #959CD9;
+    color: #2A2F5B;
     cursor: pointer;
+}
+
+.right-block-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #2A2F5B;
+    flex: 0 1 180px;
+    padding: 10px 10px;
 }
 
 
