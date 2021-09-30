@@ -1,8 +1,8 @@
 const addWorkspace = document.querySelector('.right-block-plus');
 const allBlocks = document.querySelector('.right-blocks');
-const pkm = document.querySelector('.PKM');
+const addOneLevel = document.querySelector('.title-add');
+const oneLevel = document.querySelector('.one-level');
 
-let count = 0;
 
 addWorkspace.addEventListener('click', () => {
     const newWorkspace = document.createElement('div');
@@ -10,10 +10,16 @@ addWorkspace.addEventListener('click', () => {
     allBlocks.append(newWorkspace);
 });
 
+addOneLevel.addEventListener('click', () => {
+    const newOneLevel = document.createElement('p');
+    newOneLevel.classList.add('one-level');
+    oneLevel.append(newOneLevel);
+});
 
-    pkm.addEventListener("contextmenu", (e) => {
-        e.preventDefault();
-        console.log(count++);
-    });
+
+
+
+
+
 
 

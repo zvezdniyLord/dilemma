@@ -75,6 +75,7 @@ li {
     font-size: 20px;
     font-weight: 500;
     margin-left: 50px;
+    position: relative;
 }
 
 .one-level::before {
@@ -87,7 +88,8 @@ li {
     height: 33px;
     border-radius: 33px;
     color: #fff;
-    left: 100px;
+    left: -40px;
+    bottom: -5px;
     background: linear-gradient(180deg, #3F4475 0%, #212656 100%);
     font-weight: 500;
 }
@@ -100,7 +102,8 @@ li {
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
-    margin: 10px 0;
+    margin: 10px 0 10px 25px;
+    position: relative;
 }
 
 .item-done::before {
@@ -110,7 +113,8 @@ li {
     height: 19px;
     background: linear-gradient(180deg, #3F4475 0%, #212656 100%);
     border-radius: 19px;
-    left: 100px;
+    left: -30px;
+    bottom: 2px;
 }
 
 .item-rare::before {
@@ -120,7 +124,8 @@ li {
     height: 19px;
     background: linear-gradient(180deg, #E46D6D 0%, #BB3A3A 100%);
     border-radius: 19px;
-    left: 100px;
+    left: -30px;
+    bottom: 2px;
 }
 
 .status-text {
