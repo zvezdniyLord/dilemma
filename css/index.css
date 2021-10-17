@@ -159,7 +159,9 @@ li {
 .title-text {
     font-size: 24px;
     font-weight: 500;
-    color: #474747
+    background-color: #f4f4f4;
+    border: none;
+    border-bottom: 1px solid #cccccc;
 }
 
 .title-add {
@@ -186,28 +188,34 @@ li {
     position: relative;
 }
 
-.right-h2-title::after {
-    content: "+";
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    width: 30px;
-    height: 30px;
-    right: 40px;
-    bottom: 2px;
-    font-size: 24px;
-    background: linear-gradient(180deg, #959CD9 0%, #5F66A2 100%);
-    border-radius: 6px;
-    cursor: pointer;
-}
-
 .right-tabs {
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.right-add-tab {
+    border: none;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+.btn-add-tab {
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background: linear-gradient(180deg, #FBD448 0%, #E6BA1D 100%);
+    color: #454545;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-add-tab:hover {
+    background: linear-gradient(180deg, #f6d459 0%, #e2b513 100%);
+    transition: all 1s;
 }
 
 .right-tab {
@@ -220,6 +228,7 @@ li {
     align-items: center;
     justify-content: space-around;
     margin-top: 15px;
+    padding: 5px;
 }
 
 .right-tab:nth-child(2n+1) {
@@ -288,4 +297,61 @@ li {
     padding: 10px 10px;
 }
 
+.enter {
+    display: flex;
+    height: 100vh;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
 
+.inputs {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.btn-auth {
+    width: 317px;
+    height: 97px;
+    background: linear-gradient(180deg, #3F4475 0%, #212656 100%);
+    border-radius: 15px;
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    line-height: 39px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-auth:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.1s;
+}
+
+.form-rega {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 404px;
+    margin-left: 400px;
+}
+
+.input-form-rega {
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #949494;
+    height: 35px;
+}
+
+.input-form-rega::placeholder{
+    text-align: center;
+    font-size: 32px;
+    color: #949494;
+    position: absolute;
+}
+
+.invalid {
+    border: 2px solid #BB3A3A;
+}
