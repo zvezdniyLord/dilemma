@@ -8,6 +8,8 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+
+
 li {
     list-style: none;
 }
@@ -21,7 +23,7 @@ li {
 .left__zona {
     width: 34.6%;
     background-color: #f4f4f4;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 .right__zona {
@@ -54,20 +56,21 @@ li {
 
 }
 
+
 .top-title-strong {
     font-size: 26px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .top-title {
     padding-bottom: 20px;
     color: #636363;
     font-size: 26px;
+    font-weight: 500;
 }
 
 .left-middle {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -106,6 +109,36 @@ li {
     position: relative;
 }
 
+.left-new-level {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left-h2-input {
+    font-size: 20px;
+    font-weight: 500;
+    width: 180px;
+    border: none;
+    background-color: #f4f4f4;
+}
+
+.left-title-add {
+    min-width: 44px;
+    height: 30px;
+    background-color: #DCDFFF;
+    color: #757EC9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #757EC9;
+    border-radius: 8px;
+    font-size: 42px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
 .item-done::before {
     content: '';
     position: absolute;
@@ -130,21 +163,42 @@ li {
 
 .status-text {
     font-size: 30px;
+    font-weight: 500;
 }
 
 .left-middle-counters {
     margin-bottom: 24px;
+    margin-left: 166px;
 }
 
-.count {
+.levels-block {
+    margin-top: 15px;
+}
+
+.count-done {
     width: 45px;
     height: 30px;
-    border-radius: 6px;
-    background: linear-gradient(180deg, #A55EEC 0%, #8338CD 100%);
+    border-radius: 8px;
+    background: #B8FFDD;
+    border: 2px solid #4AD391;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #000;
+    margin-top: 29px;
+    font-weight: 600;
+}
+
+.count-rare {
+    width: 45px;
+    height: 30px;
+    border-radius: 8px;
+    background: #FFD6D6;
+    border: 2px solid #EC5656;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
     margin-top: 29px;
     font-weight: 600;
 }
@@ -180,6 +234,29 @@ li {
 .right-title {
     width: 200px;
     margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right-title-edit {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.right-title-add {
+    width: 44px;
+    height: 30px;
+    background-color: #f4f4f4;
+    color: #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    font-size: 42px;
+    margin-left: 15px;
+    cursor: pointer;
 }
 
 .right-h2-title {
@@ -221,7 +298,7 @@ li {
 .right-tab {
     min-width: 207px;
     height: 35px;
-    background: linear-gradient(180deg, #A55EEC 0%, #8338CD 100%);
+    background: #E0C1FF;
     border-radius: 3px;
     color: #fff;
     display: flex;
@@ -231,19 +308,19 @@ li {
     padding: 5px;
 }
 
-.right-tab:nth-child(2n+1) {
-    background: linear-gradient(180deg, #3F4475 0%, #212656 100%);
-}
-
-.right-tab:nth-child(3n+1) {
-    background: linear-gradient(180deg, #E46D6D 0%, #BB3A3A 100%);
-}
-
 .right-tab-text {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.right-tab-input {
     font-size: 20px;
+    width: 150px;
     font-weight: 700;
     flex: 1 1 126px;
     margin: 0 5px;
+    border: 0;
+    background-color: #E0C1FF;
 }
 
 .right-tab-block {
@@ -256,9 +333,6 @@ li {
     height: 35px;
 }
 
-.right-tab-add {
-    cursor: pointer;
-}
 
 .right-tab-custom {
     cursor: pointer;
@@ -276,12 +350,27 @@ li {
    min-width: 217px;
    min-height: 132px;
    border-radius: 12px;
-   background: linear-gradient(180deg, #DCE3ED 0%, #B5C1D2 100%);
+   background: #DCDFFF;
+   border: 2px solid #BABEE5;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
    margin: 10px 15px;
+   flex: 0 1 217px;
 }
+
+.right-block-input {
+    min-width: 120px;
+    border: 0;
+    background-color: #DCDFFF;
+}
+
+.right-block-input::placeholder {
+    text-align: center;
+    font-size: 20px;
+}
+
 
 .right-block-plus {
     font-size: 50px;
@@ -295,6 +384,11 @@ li {
     color: #2A2F5B;
     flex: 0 1 180px;
     padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
 }
 
 .enter {
@@ -355,3 +449,4 @@ li {
 .invalid {
     border: 2px solid #BB3A3A;
 }
+
