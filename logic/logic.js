@@ -12,19 +12,19 @@ const iconEdit = document.querySelectorAll('.right-title-edit');
 
 
 
-/*iconEdit.forEach(i => {
+iconEdit.forEach(i => {
     i.addEventListener('click', () => {
         const textarea = document.createElement('textarea');
         const btn = document.createElement('button');
         btn.innerText = 'Добавить';
         i.replaceWith(textarea, btn);
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => {
             const test = leftH2Input.innerText = textarea.value;
             textarea.replaceWith(test);
             btn.remove();
         });
     });
-});*/
+});
 
 /*leftH2Input.forEach(i => {
     i.addEventListener('click', function func() {
@@ -34,18 +34,18 @@ const iconEdit = document.querySelectorAll('.right-title-edit');
         this.appendChild(input);
         this.removeEventListener('click', func);
         let elem = this;
-        console.log(elem);
+        console.log(elem.value);
         input.addEventListener('blur', () => {
             elem.innerHTML = this.value;
         });
     })
 });*/
 
-for(let i = 0; i < leftH2Input.length; i++) {
+/*for(let i = 0; i < leftH2Input.length; i++) {
     leftH2Input[i].addEventListener('click', (e) => {
         e.target.setAttribute("contenteditable", true);
     });
-}
+}*/
 
 
 
@@ -59,13 +59,13 @@ addWorkspace.addEventListener('click', () => {
 
 
 addTabInput.addEventListener('keydown', (e) => {
-    /*const emptyStr = newText.trim() === '';
+    const emptyStr = newText.trim() === '';
 
-    if (emptyStr === true) {
+    /*if (emptyStr === true) {
         console.log('Не корректный ввод');
         
     }*/
-    if(e.key === 'Enter') {
+    if(e.key === 'Enter' && emptyStr === true) {
         const newTab = document.createElement('div');
         newTab.classList.add('right-tab');
         const newText = addTabInput.value;
