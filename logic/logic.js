@@ -70,6 +70,7 @@ addTabInput.addEventListener('keydown', (e) => {
         newTab.classList.add('right-tab');
         const newText = addTabInput.value;
         newTab.innerText = newText;
+        addTabInput.value = '';
         allTabs.classList.add('right-tab-text');
         allTabs.append(newTab);
     } 
