@@ -58,14 +58,13 @@ addWorkspace.addEventListener('click', () => {
 });
 
 
-addTabInput.addEventListener('keydown', (e) => {
-    const emptyStr = newText.trim() === '';
+btnAddTab.addEventListener('click', (e) => {
+    /*const emptyStr = newText.trim() === '';*/
 
     /*if (emptyStr === true) {
         console.log('Не корректный ввод');
         
     }*/
-    if(e.key === 'Enter' && emptyStr === true) {
         const newTab = document.createElement('div');
         newTab.classList.add('right-tab');
         const newText = addTabInput.value;
@@ -73,7 +72,6 @@ addTabInput.addEventListener('keydown', (e) => {
         addTabInput.value = '';
         allTabs.classList.add('right-tab-text');
         allTabs.append(newTab);
-    } 
 });
 
 
