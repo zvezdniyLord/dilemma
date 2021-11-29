@@ -1,0 +1,125 @@
+.left__zona {
+    width: 34.6%;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+.logo {
+    display: block;
+}
+
+
+.left-new-level {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+.left-h2-input {
+    font-size: 20px;
+    font-weight: 500;
+    width: 180px;
+    border: none;
+    background-color: #f4f4f4;
+}
+  
+.left-title-add {
+    min-width: 44px;
+    height: 30px;
+    background-color: #dcdfff;
+    color: #757ec9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #757ec9;
+    border-radius: 8px;
+    font-size: 42px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.left-middle-counters {
+    margin-bottom: 24px;
+    margin-left: 166px;
+}
+
+.levels-block {
+    margin-top: 15px;
+}
+
+.count-done {
+    width: 45px;
+    height: 30px;
+    border-radius: 8px;
+    background: #b8ffdd;
+    border: 2px solid #4ad391;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    margin-top: 29px;
+    font-weight: 600;
+}
+  
+.count-rare {
+    width: 45px;
+    height: 30px;
+    border-radius: 8px;
+    background: #ffd6d6;
+    border: 2px solid #ec5656;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    margin-top: 29px;
+    font-weight: 600;
+}
+
+.top-title-strong {
+    font-size: 26px;
+    font-weight: 700;
+}
+  
+.top-title {
+    padding-bottom: 20px;
+    color: #636363;
+    font-size: 26px;
+    font-weight: 500;
+}
+  
+.left-middle {
+    display: flex;
+    align-items: center;
+}
+  
+.levels {
+    margin-top: 40px;
+}
+
+.levels-item {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 10px 0 10px 25px;
+    position: relative;
+  }
+  
+.status-text {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+}
+  
+.title-text {
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #f4f4f4;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+}
